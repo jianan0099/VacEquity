@@ -134,10 +134,8 @@ def raw_data_from_owid(t0_date_owid):
 
 def get_income_class_and_G_air():
     """
-    gni->income等级 high income + chn + rus
-    vaccines
-
-    G_air from  https://github.com/jianan0099/trade_traffic_vac 来
+    gni->income high income + chn + rus
+    G_air from OAG  (https://www.oag.com/)
     :return:
     dict for values: 1: HC 0: LMIC
     traffic graph sum mobility
@@ -153,7 +151,7 @@ def get_income_class_and_G_air():
             Income_class[c] = 0
     Income_class['CHN'] = 1
     Income_class['RUS'] = 1
-    G_air = nx.read_gexf('raw_data/G_air_2020.gexf')  # air本身是一整年的数据 update 2020
+    G_air = nx.read_gexf('raw_data/G_air_2020.gexf')  # yearly data (sample data here)
     return Income_class, G_air
 
 
