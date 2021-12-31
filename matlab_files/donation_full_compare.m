@@ -18,13 +18,7 @@ path = strcat('results/don_',M,'_', mu, '_', theta,'_', Lambda,'_', d, '_', c_th
 T1 = readtable(path, 'Sheet', string(strcat(D_or_I, 'H_benefit_num')));
 T2 = readtable(path, 'Sheet', string(strcat(D_or_I, 'H_benefit_ave')));
 T3 = readtable(path, 'Sheet', string(strcat(D_or_I, 'L_benefit_num')));
-T4 = readtable(path, 'Sheet', string(strcat(D_or_I, 'L_benefit_sum')));
-
-% %T2 = readtable(path, 'Sheet', string(strcat(D_or_I, 'H_benefit_sum')));
-T5 = readtable(path, 'Sheet', string(strcat(D_or_I, 'H_not_benefit_sum')));
-% %T5 = readtable(path, 'Sheet', string(strcat(D_or_I, 'L_benefit_ave')));
-T6 = readtable(path, 'Sheet', string(strcat(D_or_I, 'L_compare_to_eq_sum')));
-
+T4 = readtable(path, 'Sheet', string(strcat(D_or_I, 'L_benefit_ave')));
 
 
 h = height(T1);
@@ -33,14 +27,12 @@ T1 = table2array(T1(1:h, 2:w));
 T2 = table2array(T2(1:h, 2:w));
 T3 = table2array(T3(1:h, 2:w));
 T4 = table2array(T4(1:h, 2:w));
-T5 = table2array(T5(1:h, 2:w));
-T6 = table2array(T6(1:h, 2:w));
+
 T = T1*100;
 T(:,:,2) = T2*100;
 T(:,:,3) = T3*100;
 T(:,:,4) = T4*100;
-T(:,:,5) = T5*100;
-T(:,:,6) = T6*100;
+
 
 figure('Units', 'centimeters','Position',[3.91583333333333,3.30729166666667,18,15])
 marker_size = 4;
