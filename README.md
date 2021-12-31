@@ -31,3 +31,5 @@ under the matlab_files folder to save data.
 7 Sample data for worldwide air-traffic data set is provided in G_air_2020.gexf. Full data are commercially available 
   from the Official Aviation Guide (https://www.oag.com/) and were used under license for the current study. Due to restrictions 
   in the licensing agreement with OAG, these data are not publicly available.
+
+8 All simulation code is also available at https://doi.org/10.5281/zenodo.5810400.
