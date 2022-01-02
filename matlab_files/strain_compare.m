@@ -113,7 +113,13 @@ for s=1:3
     xlabel('t [years]','FontSize',font_size)
     
     if s == 1
-       y = ylabel({'Ratio between the'; 'number of new case and';'the world population'});
+        if strcmp(c_class,'')
+            y = ylabel({'Ratio between the'; 'number of new case and';'the world population'});
+        elseif c_class == 'L'
+            y = ylabel({'Ratio between the'; 'number of new case and';'the population of LMICs'});
+        else
+            y = ylabel({'Ratio between the'; 'number of new case and';'the population of HICs'});
+        end
        set(y,'Units','normalized','FontSize',font_size-1,'Position',[-0.4102,0.5,0],'FontWeight','bold')
     end
    
