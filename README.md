@@ -1,4 +1,4 @@
-# Promoting equitable access to COVID-19 vaccines makes a life-saving difference to all countries (Nature Human Behaviour, under review)
+# Equitable access to COVID-19 vaccines makes a life-saving difference to all countries (Nature Human Behaviour, under review)
 ## Environment
 Python 3.7.1
 
