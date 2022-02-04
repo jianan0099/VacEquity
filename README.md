@@ -1,4 +1,4 @@
-# Equitable access to COVID-19 vaccines makes a life-saving difference to all countries
+# Equitable access to COVID-19 vaccines makes a life-saving difference to all countries (Nature Human Behaviour)
 ## Environment
 Python 3.7.1
 
@@ -33,3 +33,6 @@ under the matlab_files folder to save data.
   in the licensing agreement with OAG, these data are not publicly available.
 
 8 All simulation code is also available at https://doi.org/10.5281/zenodo.5810400.
+
+## Cite this article
+Ye, Y., Zhang, Q., Wei, X. et al. Equitable access to COVID-19 vaccines makes a life-saving difference to all countries. Nat Hum Behav (2022). https://doi.org/10.1038/s41562-022-01289-8
